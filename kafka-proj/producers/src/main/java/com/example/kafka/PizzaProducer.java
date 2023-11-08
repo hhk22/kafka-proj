@@ -104,7 +104,7 @@ public class PizzaProducer {
 
         ProducerRecord<String, String> producerRecord = new ProducerRecord<>(topicName, "id-001", "hello world2");
 
-        sendPizzaMessage(kafkaProducer, topicName, -1, 10, 100, 100, true);
+        sendPizzaMessage(kafkaProducer, topicName, -1, 1000, 100, 100, true);
 
         kafkaProducer.close();
 
